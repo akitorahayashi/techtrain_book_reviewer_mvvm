@@ -12,6 +12,7 @@ build/
 
 # CocoaPods関連
 Pods/
+Podfile.lock
 
 # Firebase設定ファイル
 GoogleService-Info.plist

@@ -46,5 +46,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneDidEnterBackground(_ scene: UIScene) {
         print("SceneDelegate: sceneDidEnterBackground - シーンがバックグラウンドに入りました")
     }
+    
 }
 

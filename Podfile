@@ -1,19 +1,24 @@
-# Define the minimum iOS version for the project
 platform :ios, '15.0'
 
 target 'techtrain_book_reviewer_mvvm' do
   # Use dynamic frameworks (recommended for Firebase)
   use_frameworks!
 
-  # Add Firebase/Auth pod
+  # Alamofire for main target
+  pod 'Alamofire', '~> 5.6'
 
-  # Include additional targets if necessary
+  # Unit test target
   target 'techtrain_book_reviewer_mvvmTests' do
     inherit! :search_paths
-    # Add pods for testing, if needed
+
+    # Include Alamofire for testing
+    pod 'Alamofire', '~> 5.6'
   end
 
+  # UI test target
   target 'techtrain_book_reviewer_mvvmUITests' do
+    inherit! :search_paths
     # Add pods for UI testing, if needed
   end
 end
+
