@@ -20,6 +20,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window.backgroundColor = UIColor.systemBackground
         window.makeKeyAndVisible()
+        
+        let navigationController = UINavigationController(rootViewController: SelectAuthViewController())
+        window.rootViewController = navigationController
     }
     
     // シーンが切断されたときに呼び出される
